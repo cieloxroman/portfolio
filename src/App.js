@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <h1>Hello</h1>
-      <Router>
+      <Router basename="/portfolio">
         <nav>
           <Link to="/start">Go to start page</Link>
         </nav>
