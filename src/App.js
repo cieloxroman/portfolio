@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Link, BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Starter from './components/Starter';
 
 function App() {
@@ -9,6 +9,9 @@ function App() {
     <div className="App">
       <h1>Hello</h1>
       <Router>
+        <nav>
+          <Link to="/start">Go to start page</Link>
+        </nav>
         <Routes>
           <Route path="/start" element={<Starter />} />
         </Routes>
