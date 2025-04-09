@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import React from "react";
-import { Link, BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Link, HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Starter from './components/Starter';
 
 function App() {
