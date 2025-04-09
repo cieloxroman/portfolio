@@ -8,14 +8,9 @@ function App() {
   return (
     <div className="App">
       <h1>Hello</h1>
-      <Router basename="/portfolio">
-        <nav>
-          <Link to="/start">Go to start page</Link>
-        </nav>
-        <Routes>
-          <Route path="/start" element={<Starter />} />
-        </Routes>
-      </Router>
+      <HashRouter>
+          <Route path="/start" component={Starter} />
+        </HashRouter>
     </div>
   );
 }
